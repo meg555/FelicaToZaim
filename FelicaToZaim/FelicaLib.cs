@@ -61,7 +61,7 @@ namespace FelicaLib
         private extern static IntPtr felica_polling(IntPtr p, ushort systemcode, byte rfu, byte time_slot);
         [DllImport("felicalib.dll", CallingConvention = CallingConvention.Cdecl)]
         private extern static void felica_free(IntPtr f);
-        [DllImport("felicalib.dll#, CallingConvention = CallingConvention.Cdecl")]
+        [DllImport("felicalib.dll", CallingConvention = CallingConvention.Cdecl)]
         private extern static void felica_getidm(IntPtr f, byte[] data);
         [DllImport("felicalib.dll", CallingConvention = CallingConvention.Cdecl)]
         private extern static void felica_getpmm(IntPtr f, byte[] data);

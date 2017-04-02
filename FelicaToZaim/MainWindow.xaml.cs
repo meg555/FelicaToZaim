@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using FelicaLib;
 using System.Data;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.IO;
 
 namespace FelicaToZaim
 {
@@ -24,36 +26,72 @@ namespace FelicaToZaim
     public partial class MainWindow : Window
     {
         DataTable table;
+        List<FelicaData> currentDatas = new List<FelicaData>();
 
+        /// <summary>
+        /// 
+        /// </summary>
         public MainWindow()
         {
-
             InitializeComponent();
 
             table = new DataTable();
-            table.Columns.Add("Tanmatu");
-            table.Columns.Add("Proc");
-            table.Columns.Add("Date");
-            table.Columns.Add("Iri");
-            table.Columns.Add("Zandaka");
-            table.Columns.Add("Renban");
-            table.Columns.Add("Price");
+            table.Columns.Add(nameof(FelicaData.Id));
+            table.Columns.Add(nameof(FelicaData.CardId));
+            table.Columns.Add(nameof(FelicaData.Tanmatu));
+            table.Columns.Add(nameof(FelicaData.Proc));
+            table.Columns.Add(nameof(FelicaData.Date));
+            table.Columns.Add(nameof(FelicaData.Iri));
+            table.Columns.Add(nameof(FelicaData.Zandaka));
+            table.Columns.Add(nameof(FelicaData.Renban));
+            table.Columns.Add(nameof(FelicaData.Price));
 
             this.DataContext = table;
+
+
+
+            ZaimDB db = new ZaimDB();
+#if true
+            db.DeleteDB();
+#endif
+            db.CreateDBIfNotExist();
+            List<FelicaData> felicaDatas = db.readDB();
+            if (null != felicaDatas)
+            {
+                setFelicaDatas(felicaDatas);
+            }
+            return;
         }
 
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void readFelicaButton_Click(object sender, RoutedEventArgs e)
         {
             Felica f = new Felica();
-            readSuica(f);
+            List<FelicaData> felicaDatas = readSuica(f);
+
+            List<FelicaData> mergedDatas = ZaimDB.mergeData(felicaDatas,currentDatas);
+            setFelicaDatas(mergedDatas);
+
+            ZaimDB db = new ZaimDB();
+            db.saveDB(mergedDatas);
+            return;
         }
 
-        private int prev_zandaka = -1;
-
-        private int readSuica(Felica f)
+        
+        private List<FelicaData> readSuica(Felica f)
         {
+
+            
+
+            List<FelicaData> felicaDatas = new List<FelicaData>();
+           
+
+
             f.Polling((int)SystemCode.Suica);
+
+            //int cardid = FelicaUtil.suica_get_id(f);
+
+            //int prev_zandaka = -1;
 
             for (int i = 0; ; i++)
             {
@@ -61,34 +99,54 @@ namespace FelicaToZaim
 
                 if (null != fdata)
                 {
-                    System.Data.DataRow row = table.NewRow();
-                    row["Tanmatu"] = fdata.Tanmatu;
-                    row["Proc"] = fdata.Proc;
-                    row["Date"] = fdata.Date;
-                    row["Iri"] = fdata.Iri;
-                    row["Zandaka"] = fdata.Zandakav;
-                    row["Renban"] = fdata.Renban;                
-
-                    int price = 0;
-                    if (0 <= prev_zandaka)
-                    {
-                        price = fdata.Zandakav - prev_zandaka;
-                    }
-                    prev_zandaka = fdata.Zandakav;
-                    row["Price"] = price;
-                    table.Rows.Add(row);
+                    //fdata.CardId = cardid;
+                    felicaDatas.Add(fdata);
                 }
                 else
                 {
-                    return 0;
+                    break;
                 }
             }
 
             f.Dispose();
-            return 0;
+
+            int prev_zandaka = -1;
+            for(int i=felicaDatas.Count-1; 0<=i;i--)
+            {
+                FelicaData data = felicaDatas[i];
+                if(0 <= prev_zandaka)
+                {
+                    data.Price = prev_zandaka - data.Zandaka;
+                }
+                prev_zandaka = data.Zandaka;
+            }
+            return felicaDatas;
         }
+
         
-        
+        private void setFelicaDatas(List<FelicaData> datas)
+        {
+            
+            currentDatas.Clear();
+            table.Clear();
+
+            foreach (FelicaData fdata in datas)
+            {
+                System.Data.DataRow row = table.NewRow();
+                row[nameof(FelicaData.Id)] = fdata.Id;
+                row[nameof(FelicaData.CardId)] = fdata.CardId;
+                row[nameof(FelicaData.Tanmatu)] = fdata.Tanmatu;
+                row[nameof(FelicaData.Proc   )] = fdata.Proc;
+                row[nameof(FelicaData.Date   )] = fdata.Date;
+                row[nameof(FelicaData.Iri    )] = fdata.Iri;
+                row[nameof(FelicaData.Zandaka)] = fdata.Zandaka;
+                row[nameof(FelicaData.Renban )] = fdata.Renban;
+                row[nameof(FelicaData.Price)]   = fdata.Price;
+                table.Rows.Add(row);
+            }
+            currentDatas.AddRange(datas);
+            return;
+        }        
     }
 
 }

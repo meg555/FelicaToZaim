@@ -19,16 +19,58 @@ namespace FelicaToZaim
         public const int SERVICE_SUICA_INOUT = 0x108f;
         public const int SERVICE_SUICA_HISTORY = 0x090f;
 
+        public const int SUICA_ID = 0x00000006;
+
+        //public static int suica_get_id(Felica f)
+        //{
+        //    byte[] data;
+        //    int id = 0;
+
+        //    data = f.ReadWithoutEncryption(SUICA_ID, 0);
+        //    if (data == null)
+        //    {
+        //        throw new Exception("nanaco ID が読み取れません");
+        //    }
+        //    Console.Write("Nanaco ID = ");
+        //    for (int i = 0; i < 8; i++)
+        //    {
+        //        id = (data[i] << (2 * i));
+        //        Console.Write(data[i].ToString("X2"));
+        //    }
+        //    Console.Write("\n");
+        //    return id;
+        //}
+
 
         public static FelicaData suica_dump_history(Felica f, int i)
         {
 
             FelicaData fdata = new FelicaData();
+            fdata.Id = null;
 
             byte[] data;
             int ctype, proc, date, time, balance, seq, region;
             int in_line, in_sta, out_line, out_sta;
             int yy, mm, dd;
+
+
+            string cardid = "";
+            //data = f.ReadWithoutEncryption(SUICA_ID, 0);
+            //if (data == null)
+            //{
+            //    //throw new Exception("nanaco ID が読み取れません");
+            //    //
+            //}
+            //Console.Write("Nanaco ID = ");
+            data = f.IDm();
+            for (int cnt = 0; cnt < 8; cnt++)
+            {
+                cardid += data[cnt].ToString("X2");
+                Console.Write(data[cnt].ToString("X2"));
+            }
+            Console.Write("\n");
+            fdata.CardId = cardid;
+
 
             data = f.ReadWithoutEncryption(SERVICE_SUICA_HISTORY, i);
             if (data == null)
@@ -95,9 +137,14 @@ namespace FelicaToZaim
             {
                 fdata.Iri = out_line.ToString("X") + "/" + out_sta.ToString("X");
             }
-            fdata.Zandakav = balance;
+            fdata.Zandaka = balance;
             fdata.Renban = seq;
 
+            // null check
+            if(0 == date && 0 == in_line && 0 == out_sta && 0 == proc && 0 == seq && 0 == balance)
+            {
+                fdata = null;
+            }
 
             return fdata;
 
