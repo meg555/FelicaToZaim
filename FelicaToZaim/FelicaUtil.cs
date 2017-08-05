@@ -20,28 +20,7 @@ namespace FelicaToZaim
         public const int SERVICE_SUICA_HISTORY = 0x090f;
 
         public const int SUICA_ID = 0x00000006;
-
-        //public static int suica_get_id(Felica f)
-        //{
-        //    byte[] data;
-        //    int id = 0;
-
-        //    data = f.ReadWithoutEncryption(SUICA_ID, 0);
-        //    if (data == null)
-        //    {
-        //        throw new Exception("nanaco ID が読み取れません");
-        //    }
-        //    Console.Write("Nanaco ID = ");
-        //    for (int i = 0; i < 8; i++)
-        //    {
-        //        id = (data[i] << (2 * i));
-        //        Console.Write(data[i].ToString("X2"));
-        //    }
-        //    Console.Write("\n");
-        //    return id;
-        //}
-
-
+        
         public static FelicaData suica_dump_history(Felica f, int i)
         {
 
@@ -55,13 +34,7 @@ namespace FelicaToZaim
 
 
             string cardid = "";
-            //data = f.ReadWithoutEncryption(SUICA_ID, 0);
-            //if (data == null)
-            //{
-            //    //throw new Exception("nanaco ID が読み取れません");
-            //    //
-            //}
-            //Console.Write("Nanaco ID = ");
+
             data = f.IDm();
             for (int cnt = 0; cnt < 8; cnt++)
             {
@@ -98,11 +71,15 @@ namespace FelicaToZaim
                     time = (data[6] << 8) + data[7];
                     in_line = data[8];
                     in_sta = data[9];
+                    out_line = -1;
+                    out_sta = -1;
                     break;
 
                 case 0x05:  // 車載機
                     in_line = (data[6] << 8) + data[7];
                     in_sta = (data[8] << 8) + data[9];
+                    out_line = -1;
+                    out_sta = -1;
                     break;
 
                 default:
@@ -120,8 +97,8 @@ namespace FelicaToZaim
             mm = (date >> 5) & 0xf;
             dd = date & 0x1f;
 
-
-            fdata.Date = yy.ToString() + "/" + mm.ToString() + "/" + dd.ToString() + " ";
+            fdata.iDate = date;
+            fdata.Date = FelicaData.toDateString(yy, mm, dd);
 
             // 時刻
             if (time > 0)
@@ -129,14 +106,22 @@ namespace FelicaToZaim
                 int hh = time >> 11;
                 int min = (time >> 5) & 0x3f;
 
-                fdata.Date += hh.ToString() + ":" + min.ToString();
+                fdata.Date += FelicaData.toTimeString(hh, min);
             }
+            fdata.Time = time;
 
-            fdata.Iri = in_line.ToString("X") + "/" + in_sta.ToString("X");
+            fdata.Iri = FelicaData.toLineShopString(in_line, in_sta);
+            fdata.IriLine = in_line;
+            fdata.IriStation = in_sta;
             if (out_line != -1)
             {
-                fdata.Iri = out_line.ToString("X") + "/" + out_sta.ToString("X");
+                fdata.Iri = FelicaData.toLineShopString(out_line, out_sta);
             }
+            fdata.De = FelicaData.toLineShopString(out_line, out_sta);
+            fdata.DeLine = out_line;
+            fdata.DeStation = out_sta;
+
+
             fdata.Zandaka = balance;
             fdata.Renban = seq;
 

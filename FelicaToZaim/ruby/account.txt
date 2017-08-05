@@ -1,0 +1,176 @@
+{
+  "accounts": [
+    {
+      "id": 4115401,
+      "name": "銀行",
+      "modified": "2013-08-29 01:17:05",
+      "sort": 0,
+      "active": -1,
+      "local_id": 4115401,
+      "parent_account_id": 3
+    },
+    {
+      "id": 4115402,
+      "name": "クレジットカード",
+      "modified": "2016-07-25 13:39:07",
+      "sort": 0,
+      "active": -1,
+      "local_id": 4115402,
+      "parent_account_id": 4
+    },
+    {
+      "id": 4115404,
+      "name": "PASMO",
+      "modified": "2013-08-29 01:28:47",
+      "sort": 0,
+      "active": -1,
+      "local_id": 4115404,
+      "parent_account_id": 6
+    },
+    {
+      "id": 4129808,
+      "name": "食堂プリペイド",
+      "modified": "2016-09-24 02:40:29",
+      "sort": 0,
+      "active": -1,
+      "local_id": 4129808,
+      "parent_account_id": 0
+    },
+    {
+      "id": 8430610,
+      "name": "QUOカード",
+      "modified": "2016-09-13 12:11:12",
+      "sort": 0,
+      "active": -1,
+      "local_id": 8430610,
+      "parent_account_id": 0
+    },
+    {
+      "id": 4115399,
+      "name": "めぐお財布",
+      "modified": "2017-03-19 19:36:11",
+      "sort": 1,
+      "active": 1,
+      "local_id": 1,
+      "parent_account_id": 1
+    },
+    {
+      "id": 4115405,
+      "name": "QUOカード",
+      "modified": "2017-03-19 19:36:11",
+      "sort": 2,
+      "active": 1,
+      "local_id": 4115405,
+      "parent_account_id": 7
+    },
+    {
+      "id": 4115400,
+      "name": "新生銀行",
+      "modified": "2017-03-19 19:36:11",
+      "sort": 3,
+      "active": 1,
+      "local_id": 4115400,
+      "parent_account_id": 2
+    },
+    {
+      "id": 4158700,
+      "name": "ろうきん",
+      "modified": "2017-03-19 19:36:11",
+      "sort": 4,
+      "active": 1,
+      "local_id": 4158700,
+      "parent_account_id": 0
+    },
+    {
+      "id": 4158678,
+      "name": "ゆうちょ",
+      "modified": "2017-03-19 19:36:11",
+      "sort": 5,
+      "active": 1,
+      "local_id": 4158678,
+      "parent_account_id": 0
+    },
+    {
+      "id": 4115403,
+      "name": "SUICA",
+      "modified": "2017-03-19 19:36:11",
+      "sort": 6,
+      "active": 1,
+      "local_id": 4115403,
+      "parent_account_id": 5
+    },
+    {
+      "id": 8780865,
+      "name": "図書カード",
+      "modified": "2017-03-19 19:36:11",
+      "sort": 7,
+      "active": 1,
+      "local_id": 8780865,
+      "parent_account_id": 0
+    },
+    {
+      "id": 6163659,
+      "name": "MUFGカード 名古屋大学カード 4566-05XX-XXXX-10XX VISA",
+      "modified": "2017-03-19 19:36:11",
+      "sort": 8,
+      "active": 1,
+      "local_id": 6163659,
+      "parent_account_id": 0
+    },
+    {
+      "id": 9180447,
+      "name": "ビューカード VIEW SUICAカード(定期) ****-****-****-3415",
+      "modified": "2017-04-16 09:34:51",
+      "sort": 9,
+      "active": 1,
+      "local_id": 9180447,
+      "parent_account_id": 0
+    },
+    {
+      "id": 8098707,
+      "name": "璃月ゆうちょ",
+      "modified": "2017-03-19 19:36:11",
+      "sort": 10,
+      "active": 1,
+      "local_id": 8098707,
+      "parent_account_id": 0
+    },
+    {
+      "id": 8083786,
+      "name": "エポスカード",
+      "modified": "2017-03-19 19:36:11",
+      "sort": 11,
+      "active": 1,
+      "local_id": 8083786,
+      "parent_account_id": 0
+    },
+    {
+      "id": 7105568,
+      "name": "みぃ横浜銀行",
+      "modified": "2017-05-02 00:52:57",
+      "sort": 12,
+      "active": 1,
+      "local_id": 7105568,
+      "parent_account_id": 0
+    },
+    {
+      "id": 8100170,
+      "name": "ギフト券",
+      "modified": "2017-03-19 19:36:11",
+      "sort": 13,
+      "active": 1,
+      "local_id": 8100170,
+      "parent_account_id": 0
+    },
+    {
+      "id": 8099210,
+      "name": "みぃお財布",
+      "modified": "2017-03-19 19:36:11",
+      "sort": 14,
+      "active": 1,
+      "local_id": 8099210,
+      "parent_account_id": 0
+    }
+  ],
+  "requested": 1493905108
+}

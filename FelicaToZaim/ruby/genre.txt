@@ -1,0 +1,1045 @@
+{
+  "genres": [
+    {
+      "id": 63213459,
+      "category_id": 13592949,
+      "name": "食料品",
+      "sort": 1,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10101,
+      "local_id": 10101
+    },
+    {
+      "id": 63213465,
+      "category_id": 13592950,
+      "name": "消耗品",
+      "sort": 1,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10201,
+      "local_id": 10201
+    },
+    {
+      "id": 63213478,
+      "category_id": 13592952,
+      "name": "携帯電話料金",
+      "sort": 1,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10401,
+      "local_id": 10401
+    },
+    {
+      "id": 63213494,
+      "category_id": 13592953,
+      "name": "水道料金",
+      "sort": 1,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10501,
+      "local_id": 10501
+    },
+    {
+      "id": 63213502,
+      "category_id": 13592954,
+      "name": "家賃",
+      "sort": 1,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10601,
+      "local_id": 10601
+    },
+    {
+      "id": 63213520,
+      "category_id": 13592955,
+      "name": "飲み会",
+      "sort": 1,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10701,
+      "local_id": 10701
+    },
+    {
+      "id": 63213527,
+      "category_id": 13592956,
+      "name": "レジャー",
+      "sort": 1,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10801,
+      "local_id": 10801
+    },
+    {
+      "id": 63213543,
+      "category_id": 13592957,
+      "name": "習い事",
+      "sort": 1,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10901,
+      "local_id": 10901
+    },
+    {
+      "id": 63213561,
+      "category_id": 13592958,
+      "name": "病院代",
+      "sort": 1,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11001,
+      "local_id": 11001
+    },
+    {
+      "id": 63213571,
+      "category_id": 13592959,
+      "name": "洋服",
+      "sort": 1,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11101,
+      "local_id": 11101
+    },
+    {
+      "id": 63213588,
+      "category_id": 13592960,
+      "name": "ガソリン",
+      "sort": 1,
+      "active": 1,
+      "modified": "2017-04-28 01:36:37",
+      "parent_genre_id": 11201,
+      "local_id": 11201
+    },
+    {
+      "id": 63213602,
+      "category_id": 13592963,
+      "name": "年金",
+      "sort": 1,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11301,
+      "local_id": 11301
+    },
+    {
+      "id": 63213635,
+      "category_id": 13592967,
+      "name": "仕送り",
+      "sort": 1,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 19901,
+      "local_id": 19901
+    },
+    {
+      "id": 12667688,
+      "category_id": 13592965,
+      "name": "出張立替",
+      "sort": 1,
+      "active": 1,
+      "modified": "2016-09-24 21:58:53",
+      "parent_genre_id": 0,
+      "local_id": 12667688
+    },
+    {
+      "id": 14978665,
+      "category_id": 13592951,
+      "name": "定期代",
+      "sort": 1,
+      "active": 1,
+      "modified": "2017-04-27 11:19:23",
+      "parent_genre_id": 0,
+      "local_id": 14978665
+    },
+    {
+      "id": 63213460,
+      "category_id": 13592949,
+      "name": "カフェ",
+      "sort": 2,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10102,
+      "local_id": 10102
+    },
+    {
+      "id": 63213466,
+      "category_id": 13592950,
+      "name": "子ども関連",
+      "sort": 2,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10202,
+      "local_id": 10202
+    },
+    {
+      "id": 63213470,
+      "category_id": 13592951,
+      "name": "電車",
+      "sort": 2,
+      "active": 1,
+      "modified": "2017-04-27 11:19:23",
+      "parent_genre_id": 10301,
+      "local_id": 10301
+    },
+    {
+      "id": 63213480,
+      "category_id": 13592952,
+      "name": "固定電話料金",
+      "sort": 2,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10402,
+      "local_id": 10402
+    },
+    {
+      "id": 63213496,
+      "category_id": 13592953,
+      "name": "電気料金",
+      "sort": 2,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10502,
+      "local_id": 10502
+    },
+    {
+      "id": 63213505,
+      "category_id": 13592954,
+      "name": "住宅ローン返済",
+      "sort": 2,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10602,
+      "local_id": 10602
+    },
+    {
+      "id": 63213522,
+      "category_id": 13592955,
+      "name": "プレゼント",
+      "sort": 2,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10702,
+      "local_id": 10702
+    },
+    {
+      "id": 63213529,
+      "category_id": 13592956,
+      "name": "イベント",
+      "sort": 2,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10802,
+      "local_id": 10802
+    },
+    {
+      "id": 63213545,
+      "category_id": 13592957,
+      "name": "新聞",
+      "sort": 2,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10902,
+      "local_id": 10902
+    },
+    {
+      "id": 63213563,
+      "category_id": 13592958,
+      "name": "薬代",
+      "sort": 2,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11002,
+      "local_id": 11002
+    },
+    {
+      "id": 63213573,
+      "category_id": 13592959,
+      "name": "アクセサリー・小物",
+      "sort": 2,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11102,
+      "local_id": 11102
+    },
+    {
+      "id": 63213590,
+      "category_id": 13592960,
+      "name": "駐車場",
+      "sort": 2,
+      "active": 1,
+      "modified": "2017-04-28 01:36:37",
+      "parent_genre_id": 11202,
+      "local_id": 11202
+    },
+    {
+      "id": 63213604,
+      "category_id": 13592963,
+      "name": "所得税",
+      "sort": 2,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11302,
+      "local_id": 11302
+    },
+    {
+      "id": 63213615,
+      "category_id": 13592965,
+      "name": "旅行",
+      "sort": 2,
+      "active": 1,
+      "modified": "2016-09-24 21:58:53",
+      "parent_genre_id": 11401,
+      "local_id": 11401
+    },
+    {
+      "id": 63213637,
+      "category_id": 13592967,
+      "name": "お小遣い",
+      "sort": 2,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 19902,
+      "local_id": 19902
+    },
+    {
+      "id": 63213461,
+      "category_id": 13592949,
+      "name": "朝ご飯",
+      "sort": 3,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10103,
+      "local_id": 10103
+    },
+    {
+      "id": 63213467,
+      "category_id": 13592950,
+      "name": "ペット関連",
+      "sort": 3,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10203,
+      "local_id": 10203
+    },
+    {
+      "id": 63213471,
+      "category_id": 13592951,
+      "name": "タクシー",
+      "sort": 3,
+      "active": 1,
+      "modified": "2017-04-27 11:19:23",
+      "parent_genre_id": 10302,
+      "local_id": 10302
+    },
+    {
+      "id": 63213482,
+      "category_id": 13592952,
+      "name": "インターネット関連費",
+      "sort": 3,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10403,
+      "local_id": 10403
+    },
+    {
+      "id": 63213498,
+      "category_id": 13592953,
+      "name": "ガス料金",
+      "sort": 3,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10503,
+      "local_id": 10503
+    },
+    {
+      "id": 63213508,
+      "category_id": 13592954,
+      "name": "家具",
+      "sort": 3,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10603,
+      "local_id": 10603
+    },
+    {
+      "id": 63213524,
+      "category_id": 13592955,
+      "name": "ご祝儀・香典",
+      "sort": 3,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10703,
+      "local_id": 10703
+    },
+    {
+      "id": 63213531,
+      "category_id": 13592956,
+      "name": "映画・動画",
+      "sort": 3,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10803,
+      "local_id": 10803
+    },
+    {
+      "id": 63213547,
+      "category_id": 13592957,
+      "name": "参考書",
+      "sort": 3,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10903,
+      "local_id": 10903
+    },
+    {
+      "id": 63213565,
+      "category_id": 13592958,
+      "name": "生命保険",
+      "sort": 3,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11003,
+      "local_id": 11003
+    },
+    {
+      "id": 63213575,
+      "category_id": 13592959,
+      "name": "下着",
+      "sort": 3,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11103,
+      "local_id": 11103
+    },
+    {
+      "id": 63213598,
+      "category_id": 13592960,
+      "name": "高速料金",
+      "sort": 3,
+      "active": 1,
+      "modified": "2017-04-28 01:36:37",
+      "parent_genre_id": 11207,
+      "local_id": 11207
+    },
+    {
+      "id": 63213606,
+      "category_id": 13592963,
+      "name": "消費税",
+      "sort": 3,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11303,
+      "local_id": 11303
+    },
+    {
+      "id": 63213617,
+      "category_id": 13592965,
+      "name": "住宅",
+      "sort": 3,
+      "active": 1,
+      "modified": "2016-09-24 21:58:53",
+      "parent_genre_id": 11402,
+      "local_id": 11402
+    },
+    {
+      "id": 63213639,
+      "category_id": 13592967,
+      "name": "使途不明金",
+      "sort": 3,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 19903,
+      "local_id": 19903
+    },
+    {
+      "id": 63213462,
+      "category_id": 13592949,
+      "name": "昼ご飯",
+      "sort": 4,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10104,
+      "local_id": 10104
+    },
+    {
+      "id": 63213468,
+      "category_id": 13592950,
+      "name": "タバコ",
+      "sort": 4,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10204,
+      "local_id": 10204
+    },
+    {
+      "id": 63213472,
+      "category_id": 13592951,
+      "name": "バス",
+      "sort": 4,
+      "active": 1,
+      "modified": "2017-04-27 11:19:23",
+      "parent_genre_id": 10303,
+      "local_id": 10303
+    },
+    {
+      "id": 63213485,
+      "category_id": 13592952,
+      "name": "放送サービス料金",
+      "sort": 4,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10404,
+      "local_id": 10404
+    },
+    {
+      "id": 63213500,
+      "category_id": 13592953,
+      "name": "その他",
+      "sort": 4,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10599,
+      "local_id": 10599
+    },
+    {
+      "id": 63213511,
+      "category_id": 13592954,
+      "name": "家電",
+      "sort": 4,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10604,
+      "local_id": 10604
+    },
+    {
+      "id": 63213526,
+      "category_id": 13592955,
+      "name": "その他",
+      "sort": 4,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10799,
+      "local_id": 10799
+    },
+    {
+      "id": 63213533,
+      "category_id": 13592956,
+      "name": "音楽",
+      "sort": 4,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10804,
+      "local_id": 10804
+    },
+    {
+      "id": 63213550,
+      "category_id": 13592957,
+      "name": "受験料",
+      "sort": 4,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10904,
+      "local_id": 10904
+    },
+    {
+      "id": 63213567,
+      "category_id": 13592958,
+      "name": "医療保険",
+      "sort": 4,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11004,
+      "local_id": 11004
+    },
+    {
+      "id": 63213577,
+      "category_id": 13592959,
+      "name": "ジム・健康",
+      "sort": 4,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11104,
+      "local_id": 11104
+    },
+    {
+      "id": 63213608,
+      "category_id": 13592963,
+      "name": "住民税",
+      "sort": 4,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11304,
+      "local_id": 11304
+    },
+    {
+      "id": 63213619,
+      "category_id": 13592965,
+      "name": "自動車",
+      "sort": 4,
+      "active": 1,
+      "modified": "2016-09-24 21:58:53",
+      "parent_genre_id": 11403,
+      "local_id": 11403
+    },
+    {
+      "id": 63213641,
+      "category_id": 13592967,
+      "name": "立替金",
+      "sort": 4,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 19904,
+      "local_id": 19904
+    },
+    {
+      "id": 14985044,
+      "category_id": 13592960,
+      "name": "点検",
+      "sort": 4,
+      "active": 1,
+      "modified": "2017-04-28 01:36:37",
+      "parent_genre_id": 0,
+      "local_id": 14985044
+    },
+    {
+      "id": 63213463,
+      "category_id": 13592949,
+      "name": "晩ご飯",
+      "sort": 5,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10105,
+      "local_id": 10105
+    },
+    {
+      "id": 63213469,
+      "category_id": 13592950,
+      "name": "その他",
+      "sort": 5,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10299,
+      "local_id": 10299
+    },
+    {
+      "id": 63213474,
+      "category_id": 13592951,
+      "name": "飛行機",
+      "sort": 5,
+      "active": 1,
+      "modified": "2017-04-27 11:19:23",
+      "parent_genre_id": 10304,
+      "local_id": 10304
+    },
+    {
+      "id": 63213487,
+      "category_id": 13592952,
+      "name": "宅配便",
+      "sort": 5,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10405,
+      "local_id": 10405
+    },
+    {
+      "id": 63213514,
+      "category_id": 13592954,
+      "name": "リフォーム",
+      "sort": 5,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10605,
+      "local_id": 10605
+    },
+    {
+      "id": 63213534,
+      "category_id": 13592956,
+      "name": "漫画",
+      "sort": 5,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10805,
+      "local_id": 10805
+    },
+    {
+      "id": 63213552,
+      "category_id": 13592957,
+      "name": "学費",
+      "sort": 5,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10905,
+      "local_id": 10905
+    },
+    {
+      "id": 63213569,
+      "category_id": 13592958,
+      "name": "その他",
+      "sort": 5,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11099,
+      "local_id": 11099
+    },
+    {
+      "id": 63213579,
+      "category_id": 13592959,
+      "name": "美容院",
+      "sort": 5,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11105,
+      "local_id": 11105
+    },
+    {
+      "id": 63213592,
+      "category_id": 13592960,
+      "name": "自動車保険",
+      "sort": 5,
+      "active": 1,
+      "modified": "2017-04-28 01:36:37",
+      "parent_genre_id": 11203,
+      "local_id": 11203
+    },
+    {
+      "id": 63213610,
+      "category_id": 13592963,
+      "name": "個人事業税",
+      "sort": 5,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11305,
+      "local_id": 11305
+    },
+    {
+      "id": 63213621,
+      "category_id": 13592965,
+      "name": "バイク",
+      "sort": 5,
+      "active": 1,
+      "modified": "2016-09-24 21:58:53",
+      "parent_genre_id": 11404,
+      "local_id": 11404
+    },
+    {
+      "id": 63213644,
+      "category_id": 13592967,
+      "name": "未分類",
+      "sort": 5,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 19905,
+      "local_id": 19905
+    },
+    {
+      "id": 63213464,
+      "category_id": 13592949,
+      "name": "その他",
+      "sort": 6,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10199,
+      "local_id": 10199
+    },
+    {
+      "id": 63213476,
+      "category_id": 13592951,
+      "name": "その他",
+      "sort": 6,
+      "active": 1,
+      "modified": "2017-04-27 11:19:23",
+      "parent_genre_id": 10399,
+      "local_id": 10399
+    },
+    {
+      "id": 63213490,
+      "category_id": 13592952,
+      "name": "切手・はがき",
+      "sort": 6,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10406,
+      "local_id": 10406
+    },
+    {
+      "id": 63213516,
+      "category_id": 13592954,
+      "name": "住宅保険",
+      "sort": 6,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10606,
+      "local_id": 10606
+    },
+    {
+      "id": 63213536,
+      "category_id": 13592956,
+      "name": "書籍",
+      "sort": 6,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10806,
+      "local_id": 10806
+    },
+    {
+      "id": 63213555,
+      "category_id": 13592957,
+      "name": "学資保険",
+      "sort": 6,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10906,
+      "local_id": 10906
+    },
+    {
+      "id": 63213581,
+      "category_id": 13592959,
+      "name": "コスメ",
+      "sort": 6,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11106,
+      "local_id": 11106
+    },
+    {
+      "id": 63213593,
+      "category_id": 13592960,
+      "name": "自動車税",
+      "sort": 6,
+      "active": 1,
+      "modified": "2017-04-28 01:36:37",
+      "parent_genre_id": 11204,
+      "local_id": 11204
+    },
+    {
+      "id": 63213613,
+      "category_id": 13592963,
+      "name": "その他",
+      "sort": 6,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11399,
+      "local_id": 11399
+    },
+    {
+      "id": 63213623,
+      "category_id": 13592965,
+      "name": "結婚",
+      "sort": 6,
+      "active": 1,
+      "modified": "2016-09-24 21:58:53",
+      "parent_genre_id": 11405,
+      "local_id": 11405
+    },
+    {
+      "id": 19906,
+      "category_id": 13592967,
+      "name": "現金の引出",
+      "sort": 6,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 19906,
+      "local_id": 19906
+    },
+    {
+      "id": 63213646,
+      "category_id": 13592967,
+      "name": "その他",
+      "sort": 6,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 19999,
+      "local_id": 19999
+    },
+    {
+      "id": 63213492,
+      "category_id": 13592952,
+      "name": "その他",
+      "sort": 7,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10499,
+      "local_id": 10499
+    },
+    {
+      "id": 63213518,
+      "category_id": 13592954,
+      "name": "その他",
+      "sort": 7,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10699,
+      "local_id": 10699
+    },
+    {
+      "id": 63213538,
+      "category_id": 13592956,
+      "name": "ゲーム",
+      "sort": 7,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10807,
+      "local_id": 10807
+    },
+    {
+      "id": 63213557,
+      "category_id": 13592957,
+      "name": "塾",
+      "sort": 7,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10907,
+      "local_id": 10907
+    },
+    {
+      "id": 63213583,
+      "category_id": 13592959,
+      "name": "エステ・ネイル",
+      "sort": 7,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11107,
+      "local_id": 11107
+    },
+    {
+      "id": 63213595,
+      "category_id": 13592960,
+      "name": "自動車ローン",
+      "sort": 7,
+      "active": 1,
+      "modified": "2017-04-28 01:36:37",
+      "parent_genre_id": 11205,
+      "local_id": 11205
+    },
+    {
+      "id": 63213625,
+      "category_id": 13592965,
+      "name": "出産",
+      "sort": 7,
+      "active": 1,
+      "modified": "2016-09-24 21:58:53",
+      "parent_genre_id": 11406,
+      "local_id": 11406
+    },
+    {
+      "id": 19907,
+      "category_id": 13592967,
+      "name": "カードの引落",
+      "sort": 7,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 19907,
+      "local_id": 19907
+    },
+    {
+      "id": 63213541,
+      "category_id": 13592956,
+      "name": "その他",
+      "sort": 8,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10899,
+      "local_id": 10899
+    },
+    {
+      "id": 63213558,
+      "category_id": 13592957,
+      "name": "その他",
+      "sort": 8,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 10999,
+      "local_id": 10999
+    },
+    {
+      "id": 63213585,
+      "category_id": 13592959,
+      "name": "クリーニング",
+      "sort": 8,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11108,
+      "local_id": 11108
+    },
+    {
+      "id": 63213596,
+      "category_id": 13592960,
+      "name": "免許教習",
+      "sort": 8,
+      "active": 1,
+      "modified": "2017-04-28 01:36:37",
+      "parent_genre_id": 11206,
+      "local_id": 11206
+    },
+    {
+      "id": 63213627,
+      "category_id": 13592965,
+      "name": "介護",
+      "sort": 8,
+      "active": 1,
+      "modified": "2016-09-24 21:58:53",
+      "parent_genre_id": 11407,
+      "local_id": 11407
+    },
+    {
+      "id": 19908,
+      "category_id": 13592967,
+      "name": "電子マネーにチャージ",
+      "sort": 8,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 19908,
+      "local_id": 19908
+    },
+    {
+      "id": 63213586,
+      "category_id": 13592959,
+      "name": "その他",
+      "sort": 9,
+      "active": 1,
+      "modified": "2000-01-01 00:00:00",
+      "parent_genre_id": 11199,
+      "local_id": 11199
+    },
+    {
+      "id": 63213600,
+      "category_id": 13592960,
+      "name": "その他",
+      "sort": 9,
+      "active": 1,
+      "modified": "2017-04-28 01:36:37",
+      "parent_genre_id": 11299,
+      "local_id": 11299
+    },
+    {
+      "id": 63213629,
+      "category_id": 13592965,
+      "name": "家具",
+      "sort": 9,
+      "active": 1,
+      "modified": "2016-09-24 21:58:53",
+      "parent_genre_id": 11408,
+      "local_id": 11408
+    },
+    {
+      "id": 63213630,
+      "category_id": 13592965,
+      "name": "家電",
+      "sort": 10,
+      "active": 1,
+      "modified": "2016-09-24 21:58:53",
+      "parent_genre_id": 11409,
+      "local_id": 11409
+    },
+    {
+      "id": 63213632,
+      "category_id": 13592965,
+      "name": "その他",
+      "sort": 11,
+      "active": 1,
+      "modified": "2016-09-24 21:58:53",
+      "parent_genre_id": 11499,
+      "local_id": 11499
+    }
+  ],
+  "requested": 1493904364
+}

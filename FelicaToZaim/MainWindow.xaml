@@ -5,19 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FelicaToZaim"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Margin="10,10,0,0" Width="497">
-            <TabItem Header="カード内容">
-                <Grid Background="#FFE5E5E5" Margin="0,0,0,-72" Height="276" VerticalAlignment="Top">
-                    <DataGrid x:Name="dataGrid" ItemsSource="{Binding}" AutoGenerateColumns="True" HorizontalAlignment="Left" Margin="0,39,-10,0" Width="497"/>
-                    <Button x:Name="button" Content="読み込み" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="readFelicaButton_Click"/>
-                </Grid>
-            </TabItem>
-            <TabItem Header="お店">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
-        </TabControl>
+        Title="MainWindow" Height="615.25" Width="859.183">
+    <TabControl x:Name="tabControl" Margin="10,10,10,0" RenderTransformOrigin="0.5,0.5">
+        <TabControl.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform AngleX="-0.551"/>
+                <RotateTransform/>
+                <TranslateTransform X="-1.49"/>
+            </TransformGroup>
+        </TabControl.RenderTransform>
+        <TabItem Header="カード内容">
+            <Grid Background="#FFE5E5E5" Margin="0,0,-5,6">
+                <DataGrid x:Name="dataGrid" 
+                           AutoGenerateColumns="True" ItemsSource="{Binding DisplayItems}"
+                           AutoGeneratingColumn="dataGrid_AutoGeneratingColumn" Margin="0,39,0,0" MouseDoubleClick="dataGrid_MouseDoubleClick" CellEditEnding="dataGrid_CellEditEnding"
+                           >
+                </DataGrid>
+                <Button x:Name="button" Content="読み込み" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="readFelicaButton_Click" Height="24"/>
+                <Button x:Name="RefleshButton" Content="Reflesh" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top" Width="75" Click="RefleshButton_Click"/>
+                <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Margin="170,10,0,0" VerticalAlignment="Top" Width="75" Click="SaveButton_Click"/>
+                <Button x:Name="UploadButton" Content="Upload" HorizontalAlignment="Left" Margin="250,10,0,0" VerticalAlignment="Top" Width="75" Click="UploadButton_Click"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="お店">
+            <Grid Background="#FFE5E5E5"/>
+        </TabItem>
+    </TabControl>
 
-    </Grid>
 </Window>
